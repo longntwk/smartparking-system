@@ -1,4 +1,9 @@
 package com.blueeye.smartparkingsystem.event;
 
-public record VehicleEnteredEvent() {
+import java.time.LocalDateTime;
+
+public record VehicleEnteredEvent(String vehicleNumber,
+                                  LocalDateTime entryTime) {
+
+
 }

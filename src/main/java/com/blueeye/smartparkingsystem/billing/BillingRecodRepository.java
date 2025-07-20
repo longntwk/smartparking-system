@@ -1,4 +1,6 @@
 package com.blueeye.smartparkingsystem.billing;
 
-public interface BillingRecodRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface BillingRecodRepository extends JpaRepository<BillingRecord,Long> {
 }
